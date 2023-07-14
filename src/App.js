@@ -1,25 +1,85 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import TvShows from './Screens/TvShows';
+import Home from './Screens/Home';
+import SignIn from './Screens/SignIn';
+import AdminLogin from './Screens/AdminLogin';
+import AdminDashboard from './Screens/AdminDashboard';
+import Admin from './Screens/Admin';
+import AdminMovieAdd from './Screens/AdminMovieAdd';
+
+
 
 function App() {
+    const route = createBrowserRouter([
+        {
+            path: '/',
+            element: <Home />,
+            children: [
+                {
+                    index: true,
+                    element: <TvShows />
+                },
+                {
+                    path: 'signIn',
+                    element: <SignIn />
+                },
+                {
+                    path: 'Tv Shows',
+                    element: <TvShows />
+                },
+                {
+                    path: 'New',
+                    element: <TvShows />
+                },
+                {
+                    path: 'WWE',
+                    element: <TvShows />
+                },
+                {
+                    path: 'Sports',
+                    element: <TvShows />
+                },
+                {
+                    path: 'Movies',
+                    element: <TvShows />
+                },
+                {
+                    path: 'Originals',
+                    element: <TvShows />
+                },
+                {
+                    path: 'WatchFree',
+                    element: <TvShows />
+                },
+                {
+                    path: 'Premium',
+                    element: <TvShows />
+                },
+            ]
+        },
+        {
+            path: 'admin',
+            element: <Admin />,
+            children: [
+                {
+                    index: true,
+                    element: <AdminLogin />
+                },
+                {
+                    path: 'adminDashboard',
+                    element: <AdminDashboard />
+                },
+                {
+                    path: 'adminMovieAdd',
+                    element: <AdminMovieAdd />
+                },
+            ]
+        }
+    ]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <RouterProvider router={route} />
+  )
 }
 
-export default App;
+export default App

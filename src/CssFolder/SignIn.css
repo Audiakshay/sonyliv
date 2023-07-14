@@ -1,0 +1,65 @@
+.container2 {
+    margin: 0 36% 0 36%;
+    height: 50vh;
+}
+
+.header {
+    display: flex;
+    gap: 30%;
+    margin: 60px 0;
+}
+.header>p{
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.country_container {
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.country_code {
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.input_tag{
+    width: 40vw;
+    height: 3vh;
+    margin-left: 10px;
+    background-color: #2C2929;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    font-size: 17px;
+    padding-top: 5px;
+}
+
+.button_continue {
+    font-size: 12px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.btn {
+    width: 100%;
+    margin: 30px 0 10px 0;
+    height: 7vh;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.button_continue>p {
+    text-align: center;
+}
+
+/* otp css */
+.otpInput {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}

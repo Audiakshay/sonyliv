@@ -1,0 +1,59 @@
+
+.adminMainContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+  .adminMainContainer h1 {
+    color: #ffff;
+    margin: 20px 0px;
+  }
+  
+  .adminSubContainer {
+    background-color: #fff;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    justify-content: space-around;
+  
+  }
+  .adminSubContainer form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80%;
+  }
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
+  
+  .adminSubContainer form button {
+    background-color: orange;
+    padding: 8px 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    transition: transform .2s;
+  }
+  .adminSubContainer form button:hover{
+    transform: scale(1.05);
+  }
+  
+  
+  .inp{
+    background-color: #8db1e4;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    color:#fff;
+    font-weight: bold;
+  }

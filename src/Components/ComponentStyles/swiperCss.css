@@ -1,0 +1,9 @@
+.imgSlide {
+  height: 200px;
+  width: 170px;
+  border-Radius: 10px;
+}
+
+.imgSlide:hover{
+  transform: scale3d(0.9, 0.9, 1.2);
+}
